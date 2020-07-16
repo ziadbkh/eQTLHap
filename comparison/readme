@@ -1,0 +1,42 @@
+To simulate the comparision, run eQTLHap using these parameters in addition to path to input files:
+to run eQTLHap on the example data (with covariates) 
+Rscript eQTLHap.R 
+	--vcf 
+        -f ./comparison/example/snp_test.vcf 
+	-g ./comparison/example/gene_test.bed 
+	-b ./comparison/example/blks.det 
+	-c ./comparison/example/cov_test 
+	-o ./comparison/results/eQTL_Hap-WithCov 
+	--outSignifcancePval 1 
+	--hmf 0 
+	--gmf 0 
+	--smf 0 
+
+To run eQTLHap on the example data (without covariates) 
+Rscript eQTLHap.R 
+	--vcf 
+        -f ./comparison/example/snp_test.vcf 
+	-g ./comparison/example/gene_test.bed 
+	-b ./comparison/example/blks.det 
+	-o ./comparison/results/eQTL_Hap-WithoutCov 
+	--outSignifcancePval 1 
+	--hmf 0 
+	--gmf 0 
+	--smf 0 
+
+
+Then run the script Run_MatrixeQTL_on_the_example.R
+This script should generate SNP and clock's genotype based results using Matrix eQTL tool. It does not do haplotype-based eQTL analysis.
+By default, covariates are not included. Change the value of the variable with_cov to True to include the covariates.  
+
+
+Run_R-linear-regression_with-Covariates_on_the_example.R
+This script should generate SNP, block's haplotype and block's genotype based results using Linear regression model (lm).
+This script includes the covariates in the analysis. 
+
+Run_R-linear-regression_without-Covariates_on_the_example.R
+This script should generate SNP, block's haplotype and block's genotype based results using Linear regression model (lm).
+This script does not include the covariates in the analysis. 
+
+
+Reconfigure then run the script compare_results.R to apply whatever comparison you want.
