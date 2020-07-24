@@ -8,6 +8,9 @@
 
 eQTLHap is implemented in R and it depends on matrices operations to calculate correlation coefficients. It adapts the ultra-fast Matrix eQTL (http://www.bios.unc.edu/research/genomic_software/Matrix_eQTL/) to deal with blocks and to maintain high speed.
 
+# The results of eQTLHap application to GTEx and GEUVADIS Datasets
+Signifincat associations (Blocks' haplotypes, Blocks' genotypes and SNPs) are available at https://drive.google.com/drive/u/3/folders/1gTUPCSeLGLLSRoKVSxowxN8p70LpA25Y
+
 # Prerequisites
  1. R version 3.4.4 (2018-03-15) or later.
  2. dplyr and optparse (R libraries).
