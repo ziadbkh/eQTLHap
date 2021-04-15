@@ -58,6 +58,8 @@ The folder **comparison** contains R scripts to compare results obtained by eQTL
 1. Matrix eQTL available at http://www.bios.unc.edu/research/genomic_software/Matrix_eQTL/.
 2. R-linear regression model (lm).
 
+# Citation 
+Al Bkhetan, Ziad, et al. "eQTLHap: a tool for comprehensive eQTL analysis considering haplotypic and genotypic effects." Briefings in Bioinformatics (2021).
 
 # Licence
 Copyright **2020 Ziad Al Bkhetan**
